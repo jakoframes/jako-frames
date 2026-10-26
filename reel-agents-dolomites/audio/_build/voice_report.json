@@ -1,0 +1,128 @@
+{
+ "C01": {
+  "dur": 1.1,
+  "peak_db": -3.0,
+  "active_rms_db": -19.04,
+  "limiter_gr_db": 0.76
+ },
+ "C02": {
+  "dur": 5.11,
+  "peak_db": -3.0,
+  "active_rms_db": -18.65,
+  "limiter_gr_db": 3.54
+ },
+ "C03": {
+  "dur": 1.9,
+  "peak_db": -3.0,
+  "active_rms_db": -18.92,
+  "limiter_gr_db": 2.45
+ },
+ "C04": {
+  "dur": 1.85,
+  "peak_db": -3.0,
+  "active_rms_db": -18.99,
+  "limiter_gr_db": 4.16
+ },
+ "C05": {
+  "dur": 0.93,
+  "peak_db": -3.22,
+  "active_rms_db": -18.56,
+  "limiter_gr_db": 0.0
+ },
+ "C06": {
+  "dur": 3.1,
+  "peak_db": -3.0,
+  "active_rms_db": -18.82,
+  "limiter_gr_db": 3.59
+ },
+ "C07": {
+  "dur": 1.43,
+  "peak_db": -3.0,
+  "active_rms_db": -18.65,
+  "limiter_gr_db": 2.71
+ },
+ "C08": {
+  "dur": 2.86,
+  "peak_db": -3.0,
+  "active_rms_db": -18.91,
+  "limiter_gr_db": 1.73
+ },
+ "C09": {
+  "dur": 0.9,
+  "peak_db": -3.0,
+  "active_rms_db": -19.17,
+  "limiter_gr_db": 5.02
+ },
+ "C10": {
+  "dur": 1.54,
+  "peak_db": -3.0,
+  "active_rms_db": -20.19,
+  "limiter_gr_db": 4.05
+ },
+ "J01": {
+  "dur": 1.018,
+  "peak_db": -5.84,
+  "active_rms_db": -18.36,
+  "limiter_gr_db": 0.0
+ },
+ "J02": {
+  "dur": 1.202,
+  "peak_db": -3.0,
+  "active_rms_db": -18.26,
+  "limiter_gr_db": 1.0
+ },
+ "J03": {
+  "dur": 1.45,
+  "peak_db": -3.0,
+  "active_rms_db": -18.14,
+  "limiter_gr_db": 0.13
+ },
+ "J04": {
+  "dur": 1.62,
+  "peak_db": -3.0,
+  "active_rms_db": -18.36,
+  "limiter_gr_db": 1.39
+ },
+ "J05": {
+  "dur": 1.249,
+  "peak_db": -5.95,
+  "active_rms_db": -18.27,
+  "limiter_gr_db": 0.0
+ },
+ "J06": {
+  "dur": 0.828,
+  "peak_db": -4.3,
+  "active_rms_db": -18.14,
+  "limiter_gr_db": 0.0
+ },
+ "J07": {
+  "dur": 0.893,
+  "peak_db": -4.22,
+  "active_rms_db": -18.64,
+  "limiter_gr_db": 0.0
+ },
+ "J08": {
+  "dur": 2.516,
+  "peak_db": -3.0,
+  "active_rms_db": -18.89,
+  "limiter_gr_db": 3.3
+ },
+ "J09": {
+  "dur": 4.119,
+  "peak_db": -3.0,
+  "active_rms_db": -18.09,
+  "limiter_gr_db": 1.04
+ },
+ "J10": {
+  "dur": 2.194,
+  "peak_db": -3.0,
+  "active_rms_db": -18.88,
+  "limiter_gr_db": 4.76
+ },
+ "J11": {
+  "dur": 2.334,
+  "peak_db": -3.0,
+  "active_rms_db": -18.76,
+  "limiter_gr_db": 1.01
+ }
+}

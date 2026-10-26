@@ -1,0 +1,709 @@
+{
+ "fps": 24,
+ "frames": 952,
+ "width": 1080,
+ "height": 1920,
+ "phone_chip": {
+  "from": 0,
+  "to": 79,
+  "x": 154,
+  "y": 1147,
+  "words": [
+   {
+    "w": "state.",
+    "from": 2,
+    "to": 18
+   },
+   {
+    "w": "Hey,",
+    "from": 19,
+    "to": 30
+   },
+   {
+    "w": "it's",
+    "from": 30,
+    "to": 48
+   },
+   {
+    "w": "the",
+    "from": 48,
+    "to": 51
+   },
+   {
+    "w": "road",
+    "from": 51,
+    "to": 58
+   },
+   {
+    "w": "dude.",
+    "from": 58,
+    "to": 67
+   },
+   {
+    "w": "This",
+    "from": 67,
+    "to": 74
+   },
+   {
+    "w": "ain't",
+    "from": 74,
+    "to": 80
+   }
+  ]
+ },
+ "lines": [
+  {
+   "id": "J01",
+   "who": "jako",
+   "text": "Claude.",
+   "from": 66,
+   "to": 75,
+   "words": [
+    {
+     "w": "Claude,",
+     "from": 64,
+     "to": 73
+    }
+   ],
+   "x": 600,
+   "y": 738,
+   "visible": true,
+   "shot": "S01"
+  },
+  {
+   "id": "C01",
+   "who": "claude",
+   "text": "Wait... what are those?",
+   "from": 88,
+   "to": 127,
+   "words": [
+    {
+     "w": "Wait,",
+     "from": 86,
+     "to": 94
+    },
+    {
+     "w": "what",
+     "from": 105,
+     "to": 109
+    },
+    {
+     "w": "are",
+     "from": 109,
+     "to": 113
+    },
+    {
+     "w": "those?",
+     "from": 113,
+     "to": 121
+    }
+   ],
+   "x": 230,
+   "y": 1068,
+   "visible": true,
+   "shot": "S01"
+  },
+  {
+   "id": "J02",
+   "who": "jako",
+   "text": "I made a thousand followers in five days... with you.",
+   "from": 132,
+   "to": 221,
+   "words": [
+    {
+     "w": "I",
+     "from": 132,
+     "to": 138
+    },
+    {
+     "w": "made",
+     "from": 138,
+     "to": 143
+    },
+    {
+     "w": "a",
+     "from": 143,
+     "to": 147
+    },
+    {
+     "w": "thousand",
+     "from": 147,
+     "to": 157
+    },
+    {
+     "w": "followers",
+     "from": 157,
+     "to": 169
+    },
+    {
+     "w": "in",
+     "from": 169,
+     "to": 175
+    },
+    {
+     "w": "five",
+     "from": 175,
+     "to": 183
+    },
+    {
+     "w": "days",
+     "from": 183,
+     "to": 195
+    },
+    {
+     "w": "with",
+     "from": 195,
+     "to": 210
+    },
+    {
+     "w": "you.",
+     "from": 210,
+     "to": 219
+    }
+   ],
+   "x": 532,
+   "y": 569,
+   "visible": true,
+   "shot": "S02"
+  },
+  {
+   "id": "C02",
+   "who": "claude",
+   "text": "No, not with you. Just me.",
+   "from": 226,
+   "to": 278,
+   "words": [
+    {
+     "w": "No,",
+     "from": 226,
+     "to": 233
+    },
+    {
+     "w": "not",
+     "from": 242,
+     "to": 248
+    },
+    {
+     "w": "with",
+     "from": 248,
+     "to": 253
+    },
+    {
+     "w": "you.",
+     "from": 253,
+     "to": 260
+    },
+    {
+     "w": "Just",
+     "from": 265,
+     "to": 271
+    },
+    {
+     "w": "me.",
+     "from": 271,
+     "to": 278
+    }
+   ],
+   "x": 554,
+   "y": 828,
+   "visible": true,
+   "shot": "S03"
+  },
+  {
+   "id": "J03",
+   "who": "jako",
+   "text": "What?",
+   "from": 283,
+   "to": 288,
+   "words": [
+    {
+     "w": "What?",
+     "from": 281,
+     "to": 287
+    }
+   ],
+   "x": 610,
+   "y": 456,
+   "visible": true,
+   "shot": "S04"
+  },
+  {
+   "id": "C03",
+   "who": "claude",
+   "text": "Nah, I'm kidding, bro. Congrats!",
+   "from": 294,
+   "to": 360,
+   "words": [
+    {
+     "w": "Nah,",
+     "from": 310,
+     "to": 310
+    },
+    {
+     "w": "I'm",
+     "from": 314,
+     "to": 319
+    },
+    {
+     "w": "kidding",
+     "from": 319,
+     "to": 324
+    },
+    {
+     "w": "bro.",
+     "from": 324,
+     "to": 332
+    },
+    {
+     "w": "Congrats!",
+     "from": 346,
+     "to": 354
+    }
+   ],
+   "x": 683,
+   "y": 866,
+   "visible": true,
+   "shot": "S05"
+  },
+  {
+   "id": "J04",
+   "who": "jako",
+   "text": "So... what's the plan?",
+   "from": 366,
+   "to": 398,
+   "words": [
+    {
+     "w": "So",
+     "from": 364,
+     "to": 373
+    },
+    {
+     "w": "what's",
+     "from": 373,
+     "to": 388
+    },
+    {
+     "w": "the",
+     "from": 388,
+     "to": 391
+    },
+    {
+     "w": "plan?",
+     "from": 391,
+     "to": 397
+    }
+   ],
+   "x": 422,
+   "y": 475,
+   "visible": true,
+   "shot": "S06"
+  },
+  {
+   "id": "C04",
+   "who": "claude",
+   "text": "No, no. I have to ask. What's your plan?",
+   "from": 403,
+   "to": 460,
+   "words": [
+    {
+     "w": "No",
+     "from": 403,
+     "to": 408
+    },
+    {
+     "w": "no,",
+     "from": 408,
+     "to": 411
+    },
+    {
+     "w": "I",
+     "from": 415,
+     "to": 422
+    },
+    {
+     "w": "have",
+     "from": 422,
+     "to": 426
+    },
+    {
+     "w": "to",
+     "from": 426,
+     "to": 429
+    },
+    {
+     "w": "ask.",
+     "from": 429,
+     "to": 436
+    },
+    {
+     "w": "What's",
+     "from": 444,
+     "to": 449
+    },
+    {
+     "w": "your",
+     "from": 449,
+     "to": 451
+    },
+    {
+     "w": "plan?",
+     "from": 451,
+     "to": 457
+    }
+   ],
+   "x": 554,
+   "y": 784,
+   "visible": true,
+   "shot": "S07"
+  },
+  {
+   "id": "J05",
+   "who": "jako",
+   "text": "Just... keep posting?",
+   "from": 465,
+   "to": 492,
+   "words": [
+    {
+     "w": "Just",
+     "from": 465,
+     "to": 470
+    },
+    {
+     "w": "keep",
+     "from": 470,
+     "to": 481
+    },
+    {
+     "w": "posting?",
+     "from": 481,
+     "to": 491
+    }
+   ],
+   "x": 633,
+   "y": 436,
+   "visible": true,
+   "shot": "S08"
+  },
+  {
+   "id": "C05",
+   "who": "claude",
+   "text": "Wrong answer. You're gonna teach people how to use Claude properly.",
+   "from": 498,
+   "to": 581,
+   "words": [
+    {
+     "w": "Wrong",
+     "from": 500,
+     "to": 504
+    },
+    {
+     "w": "answer.",
+     "from": 504,
+     "to": 513
+    },
+    {
+     "w": "You're",
+     "from": 523,
+     "to": 527
+    },
+    {
+     "w": "gonna",
+     "from": 527,
+     "to": 530
+    },
+    {
+     "w": "teach",
+     "from": 530,
+     "to": 536
+    },
+    {
+     "w": "people",
+     "from": 536,
+     "to": 544
+    },
+    {
+     "w": "how",
+     "from": 544,
+     "to": 549
+    },
+    {
+     "w": "to",
+     "from": 549,
+     "to": 551
+    },
+    {
+     "w": "use",
+     "from": 551,
+     "to": 556
+    },
+    {
+     "w": "Claude",
+     "from": 556,
+     "to": 563
+    },
+    {
+     "w": "properly.",
+     "from": 563,
+     "to": 577
+    }
+   ],
+   "x": 571,
+   "y": 847,
+   "visible": true,
+   "shot": "S09"
+  },
+  {
+   "id": "J06",
+   "who": "jako",
+   "text": "Yeah, that's what I meant.",
+   "from": 586,
+   "to": 612,
+   "words": [
+    {
+     "w": "Yeah,",
+     "from": 584,
+     "to": 590
+    },
+    {
+     "w": "that's",
+     "from": 595,
+     "to": 602
+    },
+    {
+     "w": "what",
+     "from": 602,
+     "to": 605
+    },
+    {
+     "w": "I",
+     "from": 605,
+     "to": 607
+    },
+    {
+     "w": "meant.",
+     "from": 607,
+     "to": 612
+    }
+   ],
+   "x": 512,
+   "y": 453,
+   "visible": true,
+   "shot": "S10"
+  },
+  {
+   "id": "C06",
+   "who": "claude",
+   "text": "Mm... you didn't mean that.",
+   "from": 618,
+   "to": 665,
+   "words": [
+    {
+     "w": "Mmm,",
+     "from": 622,
+     "to": 629
+    },
+    {
+     "w": "you",
+     "from": 637,
+     "to": 643
+    },
+    {
+     "w": "didn't",
+     "from": 643,
+     "to": 651
+    },
+    {
+     "w": "mean",
+     "from": 651,
+     "to": 654
+    },
+    {
+     "w": "that.",
+     "from": 654,
+     "to": 662
+    }
+   ],
+   "x": 473,
+   "y": 800,
+   "visible": true,
+   "shot": "S11"
+  },
+  {
+   "id": "J07",
+   "who": "jako",
+   "text": "No, that's exactly what I meant.",
+   "from": 669,
+   "to": 714,
+   "words": [
+    {
+     "w": "No,",
+     "from": 671,
+     "to": 676
+    },
+    {
+     "w": "that's",
+     "from": 680,
+     "to": 687
+    },
+    {
+     "w": "exactly",
+     "from": 687,
+     "to": 698
+    },
+    {
+     "w": "what",
+     "from": 698,
+     "to": 707
+    },
+    {
+     "w": "I",
+     "from": 707,
+     "to": 710
+    },
+    {
+     "w": "meant.",
+     "from": 710,
+     "to": 717
+    }
+   ],
+   "x": 447,
+   "y": 451,
+   "visible": true,
+   "shot": "S12"
+  },
+  {
+   "id": "C07",
+   "who": "claude",
+   "text": "Okay, okay... let's just eat the cake.",
+   "from": 720,
+   "to": 791,
+   "words": [
+    {
+     "w": "Okay,",
+     "from": 726,
+     "to": 739
+    },
+    {
+     "w": "okay,",
+     "from": 746,
+     "to": 751
+    },
+    {
+     "w": "let's",
+     "from": 762,
+     "to": 771
+    },
+    {
+     "w": "just",
+     "from": 771,
+     "to": 774
+    },
+    {
+     "w": "eat",
+     "from": 774,
+     "to": 778
+    },
+    {
+     "w": "the",
+     "from": 778,
+     "to": 782
+    },
+    {
+     "w": "cake.",
+     "from": 782,
+     "to": 787
+    }
+   ],
+   "x": 394,
+   "y": 728,
+   "visible": true,
+   "shot": "S13"
+  },
+  {
+   "id": "J08",
+   "who": "jako",
+   "text": "You're an AI, you can't eat. So I'll eat it.",
+   "from": 796,
+   "to": 889,
+   "words": [
+    {
+     "w": "You're",
+     "from": 796,
+     "to": 801
+    },
+    {
+     "w": "an",
+     "from": 801,
+     "to": 804
+    },
+    {
+     "w": "AI,",
+     "from": 804,
+     "to": 813
+    },
+    {
+     "w": "you",
+     "from": 819,
+     "to": 822
+    },
+    {
+     "w": "can't",
+     "from": 822,
+     "to": 831
+    },
+    {
+     "w": "eat,",
+     "from": 831,
+     "to": 837
+    },
+    {
+     "w": "so",
+     "from": 845,
+     "to": 859
+    },
+    {
+     "w": "I'll",
+     "from": 859,
+     "to": 870
+    },
+    {
+     "w": "eat",
+     "from": 870,
+     "to": 874
+    },
+    {
+     "w": "it.",
+     "from": 874,
+     "to": 882
+    }
+   ],
+   "x": 567,
+   "y": 312,
+   "visible": true,
+   "shot": "S14"
+  },
+  {
+   "id": "C08",
+   "who": "claude",
+   "text": "Get out!",
+   "from": 892,
+   "to": 931,
+   "words": [
+    {
+     "w": "Get",
+     "from": 905,
+     "to": 908
+    },
+    {
+     "w": "out!",
+     "from": 908,
+     "to": 916
+    }
+   ],
+   "x": 105,
+   "y": 1076,
+   "visible": true,
+   "shot": "S15"
+  }
+ ]
+}

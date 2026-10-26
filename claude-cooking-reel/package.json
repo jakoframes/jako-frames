@@ -1,0 +1,17 @@
+{
+  "name": "claude-cooking-reel",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Reel out/silent.mp4 --muted --browser-executable=.browser/chrome-headless-shell-win64/chrome-headless-shell.exe"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.242",
+    "@remotion/google-fonts": "4.0.242",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.242"
+  }
+}
+

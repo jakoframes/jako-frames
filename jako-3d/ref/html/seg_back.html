@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#000;overflow:hidden}svg{display:block}</style></head><body><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="800" height="1000"><defs>
+  <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="4" result="w"/>
+    <feDisplacementMap in="SourceGraphic" in2="w" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="paper" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.2 0.6" result="s"/>
+    <feComposite in="s" in2="SourceGraphic" operator="in" result="si"/>
+    <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="si"/></feMerge>
+  </filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.4"/></filter>
+  <linearGradient id="denim" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#1f1c1e"/><stop offset=".48" stop-color="#5a5658"/><stop offset="1" stop-color="#1f1c1e"/>
+  </linearGradient>
+  <linearGradient id="denimV" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".35" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/>
+  </linearGradient>
+  <clipPath id="faceClip"><path d="M112,165 C110,232 150,268 200,268 C250,268 290,232 288,165 C286,110 250,96 200,96 C150,96 114,110 112,165 Z"/></clipPath>
+  <clipPath id="torsoClip"><path d="M146,290 Q148,277 168,275 L232,275 Q252,277 254,290 L262,384 Q262,393 252,394 Q200,400 148,394 Q138,393 138,384 Z"/></clipPath>
+  <clipPath id="sleeveClip"><path d="M-17,-6 Q-17,-19 0,-19 Q17,-19 17,-6 L19,30 L-19,30 Z"/></clipPath>
+</defs><ellipse cx="111" cy="206" rx="10" ry="12" fill="#0f0"/><ellipse cx="289" cy="206" rx="10" ry="12" fill="#0f0"/><path d="M197,48 Q193,34 182,31 M201,48 Q207,33 218,29" fill="none" stroke="#f00" stroke-width="4" stroke-linecap="round"/><path d="M106,196 C92,138 104,86 150,60 C178,44 232,40 262,56 C302,78 310,138 294,196 C294,226 266,248 232,252 L218,246 L208,254 L200,248 L192,254 L182,246 L168,252 C134,248 106,226 106,196 Z" fill="#f00"/></svg></body></html>

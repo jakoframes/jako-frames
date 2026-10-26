@@ -1,0 +1,233 @@
+[
+ {
+  "id": "J01",
+  "who": "Jako",
+  "text": "Who are they?",
+  "from": 6,
+  "to": 23,
+  "x": 711,
+  "y": 684,
+  "visible": true,
+  "cam": "CAM_01"
+ },
+ {
+  "id": "C01",
+  "who": "Claude",
+  "text": "Your agents.",
+  "from": 31,
+  "to": 54,
+  "x": 363,
+  "y": 1193,
+  "visible": true,
+  "cam": "CAM_02"
+ },
+ {
+  "id": "J02",
+  "who": "Jako",
+  "text": "Whaaat?",
+  "from": 61,
+  "to": 83,
+  "x": 533,
+  "y": 384,
+  "visible": true,
+  "cam": "CAM_03"
+ },
+ {
+  "id": "C02",
+  "who": "Claude",
+  "text": "Yep. Planner, analyst, caption writer, video director... and trend scout.",
+  "from": 93,
+  "to": 212,
+  "x": -106,
+  "y": 385,
+  "visible": false,
+  "cam": "CAM_04c"
+ },
+ {
+  "id": "J03",
+  "who": "Jako",
+  "text": "What is this place?",
+  "from": 223,
+  "to": 251,
+  "x": 627,
+  "y": 527,
+  "visible": true,
+  "cam": "CAM_05"
+ },
+ {
+  "id": "C03",
+  "who": "Claude",
+  "text": "Italy. Dolomites.",
+  "from": 264,
+  "to": 307,
+  "x": -177,
+  "y": -5539,
+  "visible": false,
+  "cam": "CAM_06"
+ },
+ {
+  "id": "J04",
+  "who": "Jako",
+  "text": "Why Dolomites?",
+  "from": 321,
+  "to": 353,
+  "x": 524,
+  "y": 477,
+  "visible": true,
+  "cam": "CAM_07"
+ },
+ {
+  "id": "C04",
+  "who": "Claude",
+  "text": "'Cause you love it here.",
+  "from": 360,
+  "to": 402,
+  "x": 96,
+  "y": 657,
+  "visible": true,
+  "cam": "CAM_08"
+ },
+ {
+  "id": "J05",
+  "who": "Jako",
+  "text": "What are they doing?",
+  "from": 412,
+  "to": 435,
+  "x": 907,
+  "y": 224,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "C05",
+  "who": "Claude",
+  "text": "Just chilling.",
+  "from": 442,
+  "to": 462,
+  "x": 440,
+  "y": 1331,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "J06",
+  "who": "Jako",
+  "text": "Why?",
+  "from": 468,
+  "to": 480,
+  "x": 915,
+  "y": 218,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "C06",
+  "who": "Claude",
+  "text": "No task yet. Ask them something, they'll come to the office.",
+  "from": 487,
+  "to": 558,
+  "x": 438,
+  "y": 1307,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "J07",
+  "who": "Jako",
+  "text": "Really?",
+  "from": 565,
+  "to": 580,
+  "x": 843,
+  "y": 222,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "C07",
+  "who": "Claude",
+  "text": "Yep. Call 'em.",
+  "from": 586,
+  "to": 618,
+  "x": 438,
+  "y": 1307,
+  "visible": true,
+  "cam": "CAM_09"
+ },
+ {
+  "id": "J08",
+  "who": "Jako",
+  "text": "Come to the office!",
+  "from": 627,
+  "to": 657,
+  "x": 524,
+  "y": 776,
+  "visible": true,
+  "cam": "CAM_10"
+ },
+ {
+  "id": "C08",
+  "who": "Claude",
+  "text": "They're on your project now. You don't need to do anything.",
+  "from": 768,
+  "to": 834,
+  "x": 364,
+  "y": 1477,
+  "visible": true,
+  "cam": "CAM_12"
+ },
+ {
+  "id": "J09",
+  "who": "Jako",
+  "text": "Ohhh, this one's planning, this one's analysing?",
+  "from": 842,
+  "to": 933,
+  "x": 701,
+  "y": 900,
+  "visible": true,
+  "cam": "CAM_12"
+ },
+ {
+  "id": "C09",
+  "who": "Claude",
+  "text": "You're right.",
+  "from": 940,
+  "to": 959,
+  "x": 1466,
+  "y": 1489,
+  "visible": false,
+  "cam": "CAM_12"
+ },
+ {
+  "id": "J10",
+  "who": "Jako",
+  "text": "So that's how my agents work.",
+  "from": 970,
+  "to": 1015,
+  "x": 552,
+  "y": 410,
+  "visible": true,
+  "cam": "CAM_13"
+ },
+ {
+  "id": "C10",
+  "who": "Claude",
+  "text": "Everything is for you.",
+  "from": 1023,
+  "to": 1057,
+  "x": -564,
+  "y": 2165,
+  "visible": false,
+  "cam": "CAM_13"
+ },
+ {
+  "id": "J11",
+  "who": "Jako",
+  "text": "Thank you. Let's relax.",
+  "from": 1069,
+  "to": 1118,
+  "x": 456,
+  "y": 868,
+  "visible": true,
+  "cam": "CAM_14"
+ }
+]

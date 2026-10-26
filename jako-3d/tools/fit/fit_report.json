@@ -1,0 +1,68 @@
+{
+  "front": {
+    "iou_union": 0.9821,
+    "iou_hair": 0.9751,
+    "iou_skin": 0.9901,
+    "kit_bbox_units": [
+      99.5,
+      27.0,
+      300.5,
+      267.5
+    ],
+    "model_bbox_units": [
+      99.5,
+      25.5,
+      300.0,
+      267.5
+    ],
+    "kit_aspect_w_over_h": 0.8358,
+    "model_aspect_w_over_h": 0.8285,
+    "kit_hair_bbox_units": [
+      99.5,
+      27.0,
+      300.5,
+      209.5
+    ],
+    "model_hair_bbox_units": [
+      99.5,
+      25.5,
+      300.0,
+      216.0
+    ],
+    "row_width_mean_abs_err_units": 0.78,
+    "row_width_max_err_units": 4.75
+  },
+  "back": {
+    "iou_union": 0.9367,
+    "iou_hair": 0.945,
+    "iou_skin": 0.137,
+    "kit_bbox_units": [
+      100.5,
+      27.0,
+      301.0,
+      253.5
+    ],
+    "model_bbox_units": [
+      99.5,
+      25.5,
+      300.0,
+      255.5
+    ],
+    "kit_aspect_w_over_h": 0.8852,
+    "model_aspect_w_over_h": 0.8717,
+    "kit_hair_bbox_units": [
+      100.5,
+      27.0,
+      301.0,
+      253.5
+    ],
+    "model_hair_bbox_units": [
+      99.5,
+      25.5,
+      300.0,
+      252.0
+    ],
+    "row_width_mean_abs_err_units": 1.96,
+    "row_width_max_err_units": 16.0
+  }
+}

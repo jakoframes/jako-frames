@@ -1,0 +1,713 @@
+{
+ "reel": "Who are they? (Dolomites, agents)",
+ "fps": 24,
+ "sample_rate": 48000,
+ "total_duration_s": 49.57,
+ "total_frames": 1190,
+ "notes": "Times in seconds from 0. Line start_s/end_s = clip file placement (file has 60 ms pre-roll + reverb/echo tail); speech_start_s/speech_end_s = audible speech (use for lip-sync/acting). Shot cuts snapped to 24 fps frames. Shot 4 subshot cuts sit on the agent-name onsets in C02 (estimated from the envelope, +-2 frames).",
+ "shots": [
+  {
+   "shot": 1,
+   "name": "Meadow ridge, behind-the-shoulder",
+   "start_s": 0.0,
+   "end_s": 1.167,
+   "duration_s": 1.167,
+   "start_frame": 0,
+   "end_frame": 28,
+   "lines": [
+    "J01"
+   ]
+  },
+  {
+   "shot": 2,
+   "name": "Low angle on Claude",
+   "start_s": 1.167,
+   "end_s": 2.458,
+   "duration_s": 1.292,
+   "start_frame": 28,
+   "end_frame": 59,
+   "lines": [
+    "C01"
+   ]
+  },
+  {
+   "shot": 3,
+   "name": "Close-up Jako (surprise)",
+   "start_s": 2.458,
+   "end_s": 3.792,
+   "duration_s": 1.333,
+   "start_frame": 59,
+   "end_frame": 91,
+   "lines": [
+    "J02"
+   ]
+  },
+  {
+   "shot": 4,
+   "name": "Fast cuts: the 5 agents",
+   "start_s": 3.792,
+   "end_s": 9.167,
+   "duration_s": 5.375,
+   "start_frame": 91,
+   "end_frame": 220,
+   "lines": [
+    "C02"
+   ],
+   "subshots": [
+    {
+     "agent": "planner",
+     "start_s": 3.792,
+     "end_s": 5.208,
+     "start_frame": 91,
+     "end_frame": 125
+    },
+    {
+     "agent": "analyst",
+     "start_s": 5.208,
+     "end_s": 5.875,
+     "start_frame": 125,
+     "end_frame": 141
+    },
+    {
+     "agent": "caption-writer",
+     "start_s": 5.875,
+     "end_s": 6.75,
+     "start_frame": 141,
+     "end_frame": 162
+    },
+    {
+     "agent": "video-director",
+     "start_s": 6.75,
+     "end_s": 7.833,
+     "start_frame": 162,
+     "end_frame": 188
+    },
+    {
+     "agent": "trend-scout",
+     "start_s": 7.833,
+     "end_s": 9.167,
+     "start_frame": 188,
+     "end_frame": 220
+    }
+   ]
+  },
+  {
+   "shot": 5,
+   "name": "Medium two-shot, Jako looks around",
+   "start_s": 9.167,
+   "end_s": 10.583,
+   "duration_s": 1.417,
+   "start_frame": 220,
+   "end_frame": 254,
+   "lines": [
+    "J03"
+   ]
+  },
+  {
+   "shot": 6,
+   "name": "Drone orbit over meadow",
+   "start_s": 10.583,
+   "end_s": 13.25,
+   "duration_s": 2.667,
+   "start_frame": 254,
+   "end_frame": 318,
+   "lines": [
+    "C03"
+   ]
+  },
+  {
+   "shot": 7,
+   "name": "Two-shot, Jako turns to Claude",
+   "start_s": 13.25,
+   "end_s": 14.917,
+   "duration_s": 1.667,
+   "start_frame": 318,
+   "end_frame": 358,
+   "lines": [
+    "J04"
+   ]
+  },
+  {
+   "shot": 8,
+   "name": "Close on Claude, pan across peaks",
+   "start_s": 14.917,
+   "end_s": 17.042,
+   "duration_s": 2.125,
+   "start_frame": 358,
+   "end_frame": 409,
+   "lines": [
+    "C04"
+   ]
+  },
+  {
+   "shot": 9,
+   "name": "Two-shot Q&A, agents chilling",
+   "start_s": 17.042,
+   "end_s": 26.0,
+   "duration_s": 8.958,
+   "start_frame": 409,
+   "end_frame": 624,
+   "lines": [
+    "J05",
+    "C05",
+    "J06",
+    "C06",
+    "J07",
+    "C07"
+   ]
+  },
+  {
+   "shot": 10,
+   "name": "Low hero angle, shout",
+   "start_s": 26.0,
+   "end_s": 27.708,
+   "duration_s": 1.708,
+   "start_frame": 624,
+   "end_frame": 665,
+   "lines": [
+    "J08"
+   ]
+  },
+  {
+   "shot": 11,
+   "name": "Agents gather: antennas, run, desks, screens",
+   "start_s": 27.708,
+   "end_s": 31.542,
+   "duration_s": 3.833,
+   "start_frame": 665,
+   "end_frame": 757,
+   "lines": []
+  },
+  {
+   "shot": 12,
+   "name": "Inside office dolly, typing",
+   "start_s": 31.542,
+   "end_s": 40.25,
+   "duration_s": 8.708,
+   "start_frame": 757,
+   "end_frame": 966,
+   "lines": [
+    "C08",
+    "J09",
+    "C09"
+   ]
+  },
+  {
+   "shot": 13,
+   "name": "Close-up Jako, smile",
+   "start_s": 40.25,
+   "end_s": 44.208,
+   "duration_s": 3.958,
+   "start_frame": 966,
+   "end_frame": 1061,
+   "lines": [
+    "J10",
+    "C10"
+   ]
+  },
+  {
+   "shot": 14,
+   "name": "Walk to campfire, crane up",
+   "start_s": 44.208,
+   "end_s": 49.57,
+   "duration_s": 5.362,
+   "start_frame": 1061,
+   "end_frame": 1190,
+   "lines": [
+    "J11"
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "J01",
+   "character": "Jako",
+   "text": "Who are they?",
+   "file": "lines/J01.wav",
+   "start_s": 0.19,
+   "end_s": 1.208,
+   "speech_start_s": 0.25,
+   "speech_end_s": 0.97,
+   "speech_start_frame": 6,
+   "speech_end_frame": 23,
+   "shot": 1
+  },
+  {
+   "id": "C01",
+   "character": "Claude",
+   "text": "Your agents.",
+   "file": "lines/C01.wav",
+   "start_s": 1.23,
+   "end_s": 2.33,
+   "speech_start_s": 1.29,
+   "speech_end_s": 2.27,
+   "speech_start_frame": 31,
+   "speech_end_frame": 54,
+   "shot": 2
+  },
+  {
+   "id": "J02",
+   "character": "Jako",
+   "text": "Whaaat?",
+   "file": "lines/J02.wav",
+   "start_s": 2.49,
+   "end_s": 3.692,
+   "speech_start_s": 2.55,
+   "speech_end_s": 3.46,
+   "speech_start_frame": 61,
+   "speech_end_frame": 83,
+   "shot": 3
+  },
+  {
+   "id": "C02",
+   "character": "Claude",
+   "text": "Yep. Planner, analyst, caption writer, video director... and trend scout.",
+   "file": "lines/C02.wav",
+   "start_s": 3.8,
+   "end_s": 8.91,
+   "speech_start_s": 3.86,
+   "speech_end_s": 8.85,
+   "speech_start_frame": 93,
+   "speech_end_frame": 212,
+   "shot": 4
+  },
+  {
+   "id": "J03",
+   "character": "Jako",
+   "text": "What is this place?",
+   "file": "lines/J03.wav",
+   "start_s": 9.24,
+   "end_s": 10.69,
+   "speech_start_s": 9.3,
+   "speech_end_s": 10.45,
+   "speech_start_frame": 223,
+   "speech_end_frame": 251,
+   "shot": 5
+  },
+  {
+   "id": "C03",
+   "character": "Claude",
+   "text": "Italy. Dolomites.",
+   "file": "lines/C03.wav",
+   "start_s": 10.94,
+   "end_s": 12.84,
+   "speech_start_s": 11.0,
+   "speech_end_s": 12.78,
+   "speech_start_frame": 264,
+   "speech_end_frame": 307,
+   "shot": 6
+  },
+  {
+   "id": "J04",
+   "character": "Jako",
+   "text": "Why Dolomites?",
+   "file": "lines/J04.wav",
+   "start_s": 13.32,
+   "end_s": 14.94,
+   "speech_start_s": 13.38,
+   "speech_end_s": 14.7,
+   "speech_start_frame": 321,
+   "speech_end_frame": 353,
+   "shot": 7
+  },
+  {
+   "id": "C04",
+   "character": "Claude",
+   "text": "'Cause you love it here.",
+   "file": "lines/C04.wav",
+   "start_s": 14.94,
+   "end_s": 16.79,
+   "speech_start_s": 15.0,
+   "speech_end_s": 16.73,
+   "speech_start_frame": 360,
+   "speech_end_frame": 402,
+   "shot": 8
+  },
+  {
+   "id": "J05",
+   "character": "Jako",
+   "text": "What are they doing?",
+   "file": "lines/J05.wav",
+   "start_s": 17.12,
+   "end_s": 18.369,
+   "speech_start_s": 17.18,
+   "speech_end_s": 18.14,
+   "speech_start_frame": 412,
+   "speech_end_frame": 435,
+   "shot": 9
+  },
+  {
+   "id": "C05",
+   "character": "Claude",
+   "text": "Just chilling.",
+   "file": "lines/C05.wav",
+   "start_s": 18.36,
+   "end_s": 19.29,
+   "speech_start_s": 18.42,
+   "speech_end_s": 19.23,
+   "speech_start_frame": 442,
+   "speech_end_frame": 462,
+   "shot": 9
+  },
+  {
+   "id": "J06",
+   "character": "Jako",
+   "text": "Why?",
+   "file": "lines/J06.wav",
+   "start_s": 19.42,
+   "end_s": 20.248,
+   "speech_start_s": 19.48,
+   "speech_end_s": 20.0,
+   "speech_start_frame": 468,
+   "speech_end_frame": 480,
+   "shot": 9
+  },
+  {
+   "id": "C06",
+   "character": "Claude",
+   "text": "No task yet. Ask them something, they'll come to the office.",
+   "file": "lines/C06.wav",
+   "start_s": 20.22,
+   "end_s": 23.32,
+   "speech_start_s": 20.28,
+   "speech_end_s": 23.26,
+   "speech_start_frame": 487,
+   "speech_end_frame": 558,
+   "shot": 9
+  },
+  {
+   "id": "J07",
+   "character": "Jako",
+   "text": "Really?",
+   "file": "lines/J07.wav",
+   "start_s": 23.5,
+   "end_s": 24.393,
+   "speech_start_s": 23.56,
+   "speech_end_s": 24.15,
+   "speech_start_frame": 565,
+   "speech_end_frame": 580,
+   "shot": 9
+  },
+  {
+   "id": "C07",
+   "character": "Claude",
+   "text": "Yep. Call 'em.",
+   "file": "lines/C07.wav",
+   "start_s": 24.37,
+   "end_s": 25.8,
+   "speech_start_s": 24.43,
+   "speech_end_s": 25.74,
+   "speech_start_frame": 586,
+   "speech_end_frame": 618,
+   "shot": 9
+  },
+  {
+   "id": "J08",
+   "character": "Jako",
+   "text": "Come to the office!",
+   "file": "lines/J08.wav",
+   "start_s": 26.08,
+   "end_s": 28.596,
+   "speech_start_s": 26.14,
+   "speech_end_s": 27.39,
+   "speech_start_frame": 627,
+   "speech_end_frame": 657,
+   "shot": 10
+  },
+  {
+   "id": "C08",
+   "character": "Claude",
+   "text": "They're on your project now. You don't need to do anything.",
+   "file": "lines/C08.wav",
+   "start_s": 31.93,
+   "end_s": 34.79,
+   "speech_start_s": 31.99,
+   "speech_end_s": 34.73,
+   "speech_start_frame": 768,
+   "speech_end_frame": 834,
+   "shot": 12
+  },
+  {
+   "id": "J09",
+   "character": "Jako",
+   "text": "Ohhh, this one's planning, this one's analysing?",
+   "file": "lines/J09.wav",
+   "start_s": 35.02,
+   "end_s": 39.139,
+   "speech_start_s": 35.08,
+   "speech_end_s": 38.89,
+   "speech_start_frame": 842,
+   "speech_end_frame": 933,
+   "shot": 12
+  },
+  {
+   "id": "C09",
+   "character": "Claude",
+   "text": "You're right.",
+   "file": "lines/C09.wav",
+   "start_s": 39.11,
+   "end_s": 40.01,
+   "speech_start_s": 39.17,
+   "speech_end_s": 39.95,
+   "speech_start_frame": 940,
+   "speech_end_frame": 959,
+   "shot": 12
+  },
+  {
+   "id": "J10",
+   "character": "Jako",
+   "text": "So that's how my agents work.",
+   "file": "lines/J10.wav",
+   "start_s": 40.34,
+   "end_s": 42.534,
+   "speech_start_s": 40.4,
+   "speech_end_s": 42.3,
+   "speech_start_frame": 970,
+   "speech_end_frame": 1015,
+   "shot": 13
+  },
+  {
+   "id": "C10",
+   "character": "Claude",
+   "text": "Everything is for you.",
+   "file": "lines/C10.wav",
+   "start_s": 42.56,
+   "end_s": 44.1,
+   "speech_start_s": 42.62,
+   "speech_end_s": 44.04,
+   "speech_start_frame": 1023,
+   "speech_end_frame": 1057,
+   "shot": 13
+  },
+  {
+   "id": "J11",
+   "character": "Jako",
+   "text": "Thank you. Let's relax.",
+   "file": "lines/J11.wav",
+   "start_s": 44.48,
+   "end_s": 46.814,
+   "speech_start_s": 44.54,
+   "speech_end_s": 46.57,
+   "speech_start_frame": 1069,
+   "speech_end_frame": 1118,
+   "shot": 14
+  }
+ ],
+ "sfx": [
+  {
+   "id": "amb_birds_distant",
+   "file": "sfx/amb_birds_distant.wav",
+   "type": "ambience_bed (raw, before duck/muffle/fade)",
+   "start_s": 0.0,
+   "end_s": 49.57,
+   "shot": "all"
+  },
+  {
+   "id": "amb_campfire",
+   "file": "sfx/amb_campfire.wav",
+   "type": "ambience_bed (raw, before duck/muffle/fade)",
+   "start_s": 0.0,
+   "end_s": 49.57,
+   "shot": "all"
+  },
+  {
+   "id": "amb_cowbells_far",
+   "file": "sfx/amb_cowbells_far.wav",
+   "type": "ambience_bed (raw, before duck/muffle/fade)",
+   "start_s": 0.0,
+   "end_s": 49.57,
+   "shot": "all"
+  },
+  {
+   "id": "amb_crickets_dusk",
+   "file": "sfx/amb_crickets_dusk.wav",
+   "type": "ambience_bed (raw, before duck/muffle/fade)",
+   "start_s": 0.0,
+   "end_s": 49.57,
+   "shot": "all"
+  },
+  {
+   "id": "amb_wind_pines",
+   "file": "sfx/amb_wind_pines.wav",
+   "type": "ambience_bed (raw, before duck/muffle/fade)",
+   "start_s": 0.0,
+   "end_s": 49.57,
+   "shot": "all"
+  },
+  {
+   "id": "whoosh_01",
+   "file": "sfx/whoosh_01.wav",
+   "type": "sfx",
+   "start_s": 3.531,
+   "end_s": 3.951,
+   "shot": 3
+  },
+  {
+   "id": "whoosh_02",
+   "file": "sfx/whoosh_02.wav",
+   "type": "sfx",
+   "start_s": 4.948,
+   "end_s": 5.368,
+   "shot": 4
+  },
+  {
+   "id": "whoosh_03",
+   "file": "sfx/whoosh_03.wav",
+   "type": "sfx",
+   "start_s": 5.615,
+   "end_s": 6.035,
+   "shot": 4
+  },
+  {
+   "id": "whoosh_04",
+   "file": "sfx/whoosh_04.wav",
+   "type": "sfx",
+   "start_s": 6.49,
+   "end_s": 6.91,
+   "shot": 4
+  },
+  {
+   "id": "whoosh_05",
+   "file": "sfx/whoosh_05.wav",
+   "type": "sfx",
+   "start_s": 7.573,
+   "end_s": 7.993,
+   "shot": 4
+  },
+  {
+   "id": "pop_01",
+   "file": "sfx/pop_01.wav",
+   "type": "sfx",
+   "start_s": 27.908,
+   "end_s": 28.018,
+   "shot": 11
+  },
+  {
+   "id": "pop_02",
+   "file": "sfx/pop_02.wav",
+   "type": "sfx",
+   "start_s": 28.098,
+   "end_s": 28.208,
+   "shot": 11
+  },
+  {
+   "id": "pop_03",
+   "file": "sfx/pop_03.wav",
+   "type": "sfx",
+   "start_s": 28.288,
+   "end_s": 28.398,
+   "shot": 11
+  },
+  {
+   "id": "pop_04",
+   "file": "sfx/pop_04.wav",
+   "type": "sfx",
+   "start_s": 28.478,
+   "end_s": 28.588,
+   "shot": 11
+  },
+  {
+   "id": "pop_05",
+   "file": "sfx/pop_05.wav",
+   "type": "sfx",
+   "start_s": 28.668,
+   "end_s": 28.778,
+   "shot": 11
+  },
+  {
+   "id": "footsteps_grass_run",
+   "file": "sfx/footsteps_grass_run.wav",
+   "type": "sfx",
+   "start_s": 28.758,
+   "end_s": 30.958,
+   "shot": 11
+  },
+  {
+   "id": "chairs_sit",
+   "file": "sfx/chairs_sit.wav",
+   "type": "sfx",
+   "start_s": 30.158,
+   "end_s": 31.058,
+   "shot": 11
+  },
+  {
+   "id": "bloop_screen_01_calendar",
+   "file": "sfx/bloop_screen_01_calendar.wav",
+   "type": "sfx",
+   "start_s": 30.458,
+   "end_s": 30.778,
+   "shot": 11
+  },
+  {
+   "id": "bloop_screen_02_chart",
+   "file": "sfx/bloop_screen_02_chart.wav",
+   "type": "sfx",
+   "start_s": 30.678,
+   "end_s": 30.998,
+   "shot": 11
+  },
+  {
+   "id": "bloop_screen_03_text",
+   "file": "sfx/bloop_screen_03_text.wav",
+   "type": "sfx",
+   "start_s": 30.898,
+   "end_s": 31.218,
+   "shot": 11
+  },
+  {
+   "id": "bloop_screen_04_timeline",
+   "file": "sfx/bloop_screen_04_timeline.wav",
+   "type": "sfx",
+   "start_s": 31.118,
+   "end_s": 31.438,
+   "shot": 11
+  },
+  {
+   "id": "bloop_screen_05_grid",
+   "file": "sfx/bloop_screen_05_grid.wav",
+   "type": "sfx",
+   "start_s": 31.338,
+   "end_s": 31.658,
+   "shot": 11
+  },
+  {
+   "id": "keyboard_typing",
+   "file": "sfx/keyboard_typing.wav",
+   "type": "sfx",
+   "start_s": 31.442,
+   "end_s": 40.55,
+   "shot": 11
+  }
+ ],
+ "mix": {
+  "file": "mix_preview.wav",
+  "stems": [
+   "stems/dialogue.wav",
+   "stems/sfx.wav",
+   "stems/ambience.wav"
+  ],
+  "levels_nominal_before_final_gain": {
+   "dialogue_active_rms_db": -18.68,
+   "dialogue_peak_db": -3.0,
+   "ambience_rms_db": -32.02,
+   "ambience_rms_db_0_30s": -31.38,
+   "sfx_peak_db": -12.55
+  },
+  "mix_pre_gain": {
+   "I": -15.9,
+   "LRA": 3.6,
+   "TP": -1.9
+  },
+  "gain_applied_db": 1.9,
+  "limiter_ceiling_db": -1.4,
+  "mix_final": {
+   "I": -14.2,
+   "LRA": 3.6,
+   "TP": -1.4
+  },
+  "dialogue_active_rms_db_final": -16.84,
+  "dialogue_peak_db_final": -1.1,
+  "ambience_rms_db_final": -30.12,
+  "sfx_peak_db_final": -10.65
+ }
+}

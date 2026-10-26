@@ -1,0 +1,32 @@
+# Dependencies and build output
+node_modules/
+out/
+renders*/
+exports/
+cache/
+.cache/
+.remotion/
+.browser/
+previews/
+__pycache__/
+*.pyc
+
+# Heavy media and binaries (renders live on disk / Instagram, not in git)
+*.mp4
+*.mov
+*.wav
+*.bin
+*.exe
+*.dll
+*.zip
+*.pak
+*.pack
+*.dat
+*.blend1
+*.old
+*.log
+
+# Secrets and local settings
+.env
+.env.*
+.claude/settings.local.json

@@ -1,0 +1,369 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mini Me Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Figtree:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a fitting-room sheet — big character on a paper stage, the fit list beside it, then the kit in rows. */
+:root{
+  --paper:#e7e3de; --surface:#f6f4f1; --ink:#251a1c; --muted:#6c6266; --rule:#d2ccc5;
+  --navy:#1f2c6b; --maroon:#8e1f35; --gold:#e3ac1c;
+  --stage:#d9d4ce; --stage-dot:#c9c2bb; --on-accent:#ffffff;
+  --display:"Bagel Fat One","Arial Rounded MT Bold","Trebuchet MS",sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#15161d; --surface:#1e2029; --ink:#efe9e4; --muted:#a59ea3; --rule:#2e313d;
+  --navy:#9fb0ff; --maroon:#ef8aa0; --gold:#f2c94c;
+  --stage:#cfc9c2; --stage-dot:#bdb6ae; --on-accent:#15161d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#15161d; --surface:#1e2029; --ink:#efe9e4; --muted:#a59ea3; --rule:#2e313d;
+  --navy:#9fb0ff; --maroon:#ef8aa0; --gold:#f2c94c;
+  --stage:#cfc9c2; --stage-dot:#bdb6ae; --on-accent:#15161d; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:1160px;margin:0 auto;padding-block:36px 72px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:grid;gap:56px}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;line-height:1;text-wrap:balance}
+h1{font-size:clamp(48px,9vw,96px);letter-spacing:-.01em}
+h2{font-size:clamp(28px,4vw,40px)}
+p{margin:0}
+.lede{color:var(--muted);max-width:62ch}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.02em}
+
+header{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:16px}
+header .kit{display:flex;gap:6px}
+.chip{display:inline-block;width:18px;height:18px;border-radius:50%;border:2px solid var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.stage{background:var(--stage);background-image:radial-gradient(var(--stage-dot) 1.2px,transparent 1.2px);background-size:18px 18px;
+  border-radius:28px;padding:18px;display:grid;gap:12px;position:relative}
+.stage svg{width:100%;max-height:640px;display:block}
+.controls{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.seg{display:inline-flex;background:var(--surface);border:2px solid var(--ink);border-radius:999px;padding:3px;gap:2px}
+.seg button{font:600 14px var(--body);border:0;background:transparent;color:var(--ink);padding:7px 16px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+.fit{display:grid;gap:14px}
+.fit h2{margin-bottom:4px}
+.fit ol{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--rule)}
+.fit li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.fit .thumb{width:76px;height:76px;border-radius:16px;background:var(--stage);overflow:hidden}
+.fit .thumb svg{width:100%;height:100%;display:block}
+.fit b{display:block;font-size:16px}
+.fit span{color:var(--muted);font-size:14px}
+
+/* rows of cards */
+.section{display:grid;gap:18px}
+.section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{margin:0;background:var(--stage);border-radius:20px;padding:10px 10px 8px;display:grid;gap:4px}
+.card svg{width:100%;height:auto;display:block}
+.card figcaption{font:600 14px var(--body);color:#2a1517;text-align:center}
+.part{background:var(--surface);border:1px solid var(--rule)}
+.part .art{background:var(--stage);border-radius:14px;padding:8px}
+.part .art svg{height:150px}
+.part figcaption{text-align:left;color:var(--ink);display:grid;gap:2px;padding:6px 4px 2px}
+.part figcaption .mono{color:var(--muted)}
+.pivot circle{fill:#e2483d;stroke:#fff;stroke-width:2}.pivot path{stroke:#e2483d;stroke-width:2}
+
+.avatars{grid-template-columns:repeat(4,minmax(0,1fr))}
+.av{margin:0;display:grid;gap:10px;justify-items:center}
+.av .disc{width:100%;aspect-ratio:1;max-width:100%;border-radius:50%;overflow:hidden;border:3px solid var(--ink)}
+.av .disc.checker{background:conic-gradient(#d8d3cd 25%,#f2efeb 0 50%,#d8d3cd 0 75%,#f2efeb 0) 0 0/24px 24px}
+.av .disc svg{width:100%;height:100%;display:block}
+.av figcaption{font:600 14px var(--body)}
+
+.btn{font:700 15px var(--body);border:2px solid var(--ink);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 18px;cursor:pointer}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:var(--on-accent);font-size:17px;padding:13px 26px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.small{font-size:13px;padding:6px 14px}
+
+.download{background:var(--surface);border:1px solid var(--rule);border-radius:28px;padding:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.download ul{margin:0;padding-left:18px;color:var(--muted);display:grid;gap:4px}
+.download ul b{color:var(--ink)}
+.dl-actions{display:grid;gap:12px;align-content:start}
+#status{min-height:1.5em;color:var(--muted);font-size:14px}
+.steps{margin:0;padding-left:22px;display:grid;gap:8px}
+.steps code{font-family:var(--mono);font-size:13px;background:var(--paper);padding:1px 6px;border-radius:6px}
+
+/* animation demos — pivots match the rig */
+.demo [class^="p-"]{transform-box:view-box}
+.p-armL{transform-origin:146px 290px}.p-armR{transform-origin:254px 290px}
+.p-legL{transform-origin:174px 388px}.p-legR{transform-origin:226px 388px}
+.p-head{transform-origin:200px 262px}.p-upper{transform-origin:200px 392px}
+.p-face-blink{opacity:0}
+.idle .p-upper{animation:bob 2.4s ease-in-out infinite}
+.idle .p-head{animation:tilt 4.8s ease-in-out infinite}
+.idle .p-armL{animation:swayL 2.4s ease-in-out infinite}.idle .p-armR{animation:swayR 2.4s ease-in-out infinite}
+.blinky .p-face-neutral{animation:eyesOpen 3.6s steps(1) infinite}.blinky .p-face-blink{animation:eyesShut 3.6s steps(1) infinite}
+.wave .p-armR{animation:wave .45s ease-in-out infinite alternate}
+.wave .p-head{animation:tilt 1.8s ease-in-out infinite}.wave .p-upper{animation:bob 1.8s ease-in-out infinite}
+.walk .p-legL{animation:stepL .7s ease-in-out infinite}.walk .p-legR{animation:stepR .7s ease-in-out infinite}
+.walk .p-armL{animation:swingL .7s ease-in-out infinite}.walk .p-armR{animation:swingR .7s ease-in-out infinite}
+.walk .p-upper{animation:walkbob .35s ease-in-out infinite alternate}
+.jump svg > g{animation:hop 1.1s cubic-bezier(.3,0,.4,1) infinite}
+.jump .p-armL{animation:armsUpL 1.1s ease-in-out infinite}.jump .p-armR{animation:armsUpR 1.1s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+@keyframes tilt{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2.5deg)}}
+@keyframes swayL{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+@keyframes swayR{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+@keyframes eyesOpen{0%{opacity:1}92%{opacity:0}97%{opacity:1}}
+@keyframes eyesShut{0%{opacity:0}92%{opacity:1}97%{opacity:0}}
+@keyframes wave{from{transform:rotate(-18deg)}to{transform:rotate(16deg)}}
+@keyframes stepL{0%,100%{transform:translateY(0) rotate(9deg)}50%{transform:translateY(-8px) rotate(-7deg)}}
+@keyframes stepR{0%,100%{transform:translateY(-8px) rotate(-7deg)}50%{transform:translateY(0) rotate(9deg)}}
+@keyframes swingL{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(16deg)}}
+@keyframes swingR{0%,100%{transform:rotate(-16deg)}50%{transform:rotate(18deg)}}
+@keyframes walkbob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@keyframes hop{0%,100%{transform:translateY(0)}15%{transform:translateY(6px)}45%{transform:translateY(-34px)}75%{transform:translateY(0)}85%{transform:translateY(4px)}}
+@keyframes armsUpL{0%,100%,85%{transform:rotate(0)}45%{transform:rotate(120deg)}}
+@keyframes armsUpR{0%,100%,85%{transform:rotate(0)}45%{transform:rotate(-120deg)}}
+@media (prefers-reduced-motion:reduce){.demo *{animation:none!important}}
+
+@media (max-width:900px){
+  .hero,.download{grid-template-columns:minmax(0,1fr)}
+  .g6{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .g4,.avatars{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:480px){.g3,.g6{grid-template-columns:repeat(2,minmax(0,1fr))}.download{padding:20px}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" id="defs-host"></svg>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Mini Me</h1>
+      <p class="lede">A rigged chibi of you for motion design. Curtain hair, sleepy eyes, Barça away kit.</p>
+    </div>
+    <div class="kit" aria-label="Kit colors">
+      <span class="chip" style="background:#f2ece0"></span><span class="chip" style="background:#8e1f35"></span>
+      <span class="chip" style="background:#1f2c6b"></span><span class="chip" style="background:#2a1a17"></span>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Character">
+    <div class="stage">
+      <div id="stage-art"></div>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Version">
+          <button type="button" id="look-medium" aria-pressed="true">A · medium hair</button>
+          <button type="button" id="look-long" aria-pressed="false">B · first look</button>
+        </div>
+        <div class="seg" role="group" aria-label="View">
+          <button type="button" id="view-front" aria-pressed="true">Front</button>
+          <button type="button" id="view-back" aria-pressed="false">Back</button>
+        </div>
+        <div class="seg" role="group" aria-label="Shades">
+          <button type="button" id="shades-on" aria-pressed="true">Shades on</button>
+          <button type="button" id="shades-off" aria-pressed="false">Shades off</button>
+        </div>
+      </div>
+    </div>
+    <div class="fit">
+      <h2>The fit</h2>
+      <ol id="fit-list"></ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="moves-h">
+    <div class="section-head"><h2 id="moves-h">Moves</h2><p class="lede">These run on the same separate layers you download, turning around the same pivots. If it moves here, it moves the same way in your editor.</p></div>
+    <div class="grid g4" id="moves"></div>
+  </section>
+
+  <section class="section" aria-labelledby="faces-h">
+    <div class="section-head"><h2 id="faces-h">Faces</h2><p class="lede">Shown without shades. Each face is its own layer, so you swap it in for blinks and reactions while the head and hair stay put.</p></div>
+    <div class="grid g6" id="faces"></div>
+  </section>
+
+  <section class="section" aria-labelledby="poses-h">
+    <div class="section-head"><h2 id="poses-h">Poses</h2></div>
+    <div class="grid g6" id="poses"></div>
+  </section>
+
+  <section class="section" aria-labelledby="rig-h">
+    <div class="section-head"><h2 id="rig-h">Rig layers</h2><p class="lede">9 layers, listed bottom to top. Every PNG uses the same 1600×2000 canvas, so the layers line up when stacked. The red cross marks each layer's anchor point.</p></div>
+    <div class="grid g3" id="parts"></div>
+  </section>
+
+  <section class="section" aria-labelledby="av-h">
+    <div class="section-head"><h2 id="av-h">Avatars</h2><p class="lede">1024×1024 squares that crop cleanly to a circle on Instagram, Telegram and Discord. They follow the shades switch above.</p></div>
+    <div class="grid avatars" id="avatars"></div>
+  </section>
+
+  <section class="download" aria-labelledby="dl-h">
+    <div class="dl-actions">
+      <h2 id="dl-h">Download the kit</h2>
+      <p class="lede">One ZIP with everything for the version picked above (A or B), drawn at full size in your browser.</p>
+      <ul>
+        <li><b>layers/</b> the 9 rig layers plus 5 face swaps</li>
+        <li><b>poses/</b> and full body front and back, each with and without shades</li>
+        <li><b>expressions/</b> head close-ups</li>
+        <li><b>avatar/</b> 4 backgrounds, each with and without shades</li>
+        <li><b>rig.json</b> with the pivots and parenting</li>
+      </ul>
+      <div><button type="button" class="btn primary" id="dl-zip">Download kit (.zip)</button></div>
+      <p id="status" role="status"></p>
+    </div>
+    <div class="dl-actions">
+      <h2>Rig it in After Effects</h2>
+      <ol class="steps">
+        <li>Import <code>layers/</code> into a 1600×2000 comp, with <code>01</code> at the bottom and <code>09</code> on top.</li>
+        <li>Set each layer's <b>Anchor Point</b> to its pivot from the cards above or <code>rig.json</code>. Then set <b>Position</b> to the same value so the layer stays in place.</li>
+        <li>Parent <code>face</code>, <code>hair</code> and <code>glasses</code> to <code>head</code>. Then parent <code>head</code>, the arms and the legs to <code>torso</code>.</li>
+        <li>Animate <b>Rotation</b> on the arms, legs and head. For a blink, swap in <code>05_face_blink.png</code> for 2–3 frames. Hide <code>glasses</code> to show the eyes.</li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="character.js"></script>
+<script>
+(function () {
+  const M = window.MiniMe;
+  const $ = (s) => document.querySelector(s);
+  const state = { view: 'front', glasses: true };
+  $('#defs-host').innerHTML = M.defs();
+
+  const HAIR_NOTE = {
+    medium: 'Medium length. Middle part, the fringe falls to eye level and the sides cover the tops of the ears. Little sprout on top.',
+    long: 'The first look. Middle part, both sides fall past the cheeks and flick out, with short strands at the nape.',
+  };
+  const FIT_ALL = [
+    ['Curtain hair', null, [92, 20, 216, 204], () => M.hairFront()],
+    ['Barça away jersey', 'Cream V-neck with maroon collar, navy and maroon side panels, crest on the chest.', [150, 270, 100, 70], () => M.character({ glasses: state.glasses })],
+    ['Wraparound shades', 'Glossy black sport frames. They are their own layer, so you can hide them.', [104, 176, 192, 60], () => M.glassesPart()],
+    ['Digital watch', 'Silver band with a green LCD face, on the left wrist.', [228, 322, 54, 54], () => M.character({ glasses: state.glasses })],
+    ['Earbud', 'One white earbud in the left ear.', [270, 174, 48, 48], () => M.character({ glasses: state.glasses }), 'long'],
+    ['Baggy jeans', 'Washed black, very wide legs that stack over the shoes.', [124, 366, 152, 124], () => M.character({ glasses: state.glasses })],
+    ['High-tops', 'White leather, navy sole and wing, gray mesh panel.', [184, 448, 88, 42], () => M.character({ glasses: state.glasses })],
+  ];
+
+  const DEMOS = [
+    ['idle blinky', { faces: ['neutral', 'blink'] }, 'Idle'],
+    ['wave', { armR: -138, face: 'happy' }, 'Wave'],
+    ['walk blinky', { faces: ['neutral', 'blink'] }, 'Walk cycle'],
+    ['jump', { face: 'happy' }, 'Jump'],
+  ];
+
+  function pressed(a, b, on) { $(a).setAttribute('aria-pressed', String(on)); $(b).setAttribute('aria-pressed', String(!on)); }
+
+  function render() {
+    const g = state.glasses;
+    $('#stage-art').innerHTML = M.svg(M.character({ view: state.view, glasses: g }), [0, 0, M.W, M.H],
+      `role="img" aria-label="Mini Me, ${state.view} view${g ? ', wearing shades' : ''}"`);
+    const lk = M.getLook();
+    const FIT = FIT_ALL.filter(f => !f[4] || f[4] === lk).map(f => [f[0], f[1] || HAIR_NOTE[lk], f[2], f[3]]);
+    $('#fit-list').innerHTML = FIT.map(([name, text, vb, art]) =>
+      `<li><div class="thumb">${M.svg(`<g filter="url(#ink)">${art()}</g>`, vb, 'aria-hidden="true" preserveAspectRatio="xMidYMid meet"')}</div><div><b>${name}</b><span>${text}</span></div></li>`).join('');
+    $('#moves').innerHTML = DEMOS.map(([cls, opts, label]) =>
+      `<figure class="card demo ${cls}">${M.svg(M.character({ anim: true, glasses: g, ...opts }), M.POSE_VB, `role="img" aria-label="${label} animation"`)}<figcaption>${label}</figcaption></figure>`).join('');
+    $('#faces').innerHTML = Object.keys(M.FACES).map(f =>
+      `<figure class="card">${M.svg(`<g filter="url(#ink)">${M.headBase('right')}${M.FACES[f]()}${M.hairFront()}</g>`, M.HEAD_VB, `role="img" aria-label="${M.FACE_LABELS[f]} face"`)}<figcaption>${M.FACE_LABELS[f]}</figcaption></figure>`).join('');
+    $('#poses').innerHTML = Object.values(M.POSES).map(p =>
+      `<figure class="card">${M.svg(M.character({ ...p, glasses: g }), M.POSE_VB, `role="img" aria-label="${p.label} pose"`)}<figcaption>${p.label}</figcaption></figure>`).join('');
+    $('#parts').innerHTML = M.LAYERS.map(L => {
+      const [x, y] = L.pivot;
+      return `<figure class="card part"><div class="art">${M.svg(`<g filter="url(#ink)">${L.svg()}</g>
+        <g class="pivot"><circle cx="${x}" cy="${y}" r="4.5"/><path d="M${x - 10},${y} L${x + 10},${y} M${x},${y - 10} L${x},${y + 10}"/></g>`, L.view, `role="img" aria-label="${L.name} layer"`)}</div>
+        <figcaption><b>${L.name}</b><span class="mono">pivot ${x * M.SCALE}, ${y * M.SCALE}${L.parent ? ' · parent: ' + L.parent : ''}</span></figcaption></figure>`;
+    }).join('');
+    const AVN = { paper: 'Paper gray', blaugrana: 'Blaugrana', cream: 'Cream', transparent: 'Transparent' };
+    $('#avatars').innerHTML = M.AVATAR_BGS.map(([k, bg]) =>
+      `<figure class="av"><div class="disc${k === 'transparent' ? ' checker' : ''}">${M.svg(M.avatarScene(bg, { glasses: g }), M.AVATAR_VB, `role="img" aria-label="${AVN[k]} avatar"`)}</div>
+        <figcaption>${AVN[k]}</figcaption><button type="button" class="btn small" data-avatar="${k}">Save PNG</button></figure>`).join('');
+    document.querySelectorAll('[data-avatar]').forEach(b => { b.disabled = !downloads; b.addEventListener('click', () => saveAvatar(b.dataset.avatar)); });
+  }
+
+  const lookSuffix = () => (M.getLook() === 'long' ? '-b' : '-a');
+  $('#look-medium').addEventListener('click', () => { M.setLook('medium'); pressed('#look-medium', '#look-long', true); render(); });
+  $('#look-long').addEventListener('click', () => { M.setLook('long'); pressed('#look-medium', '#look-long', false); render(); });
+  $('#view-front').addEventListener('click', () => { state.view = 'front'; pressed('#view-front', '#view-back', true); render(); });
+  $('#view-back').addEventListener('click', () => { state.view = 'back'; pressed('#view-front', '#view-back', false); render(); });
+  $('#shades-on').addEventListener('click', () => { state.glasses = true; pressed('#shades-on', '#shades-off', true); render(); });
+  $('#shades-off').addEventListener('click', () => { state.glasses = false; pressed('#shades-on', '#shades-off', false); render(); });
+
+  // ---------- export ----------
+  let downloads = null;
+  const status = (t) => { $('#status').textContent = t; };
+
+  function toPng(svgStr, w, h) {
+    return new Promise((resolve, reject) => {
+      const url = URL.createObjectURL(new Blob([svgStr], { type: 'image/svg+xml' }));
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas'); c.width = w; c.height = h;
+        c.getContext('2d').drawImage(img, 0, 0, w, h);
+        URL.revokeObjectURL(url);
+        c.toBlob(b => (b ? resolve(b) : reject(new Error('Could not draw the image.'))), 'image/png');
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Could not draw the image.')); };
+      img.src = url;
+    });
+  }
+
+  function explain(err) {
+    const code = err && err.code;
+    if (code === 'declined') return 'Download cancelled.';
+    if (code === 'rate_limited') return 'Another save is still waiting for you. Finish that one, then try again.';
+    if (code === 'too_large') return 'That file is too big for this view.';
+    return 'Downloads are not available in this view.';
+  }
+
+  async function saveAvatar(k) {
+    if (!downloads) return;
+    const bg = M.AVATAR_BGS.find(a => a[0] === k)[1];
+    try {
+      status('Drawing avatar…');
+      const blob = await toPng(M.standalone(M.avatarScene(bg, { glasses: state.glasses }), M.AVATAR_VB, [1024, 1024]), 1024, 1024);
+      await downloads.save({ filename: `mini-me${lookSuffix()}-avatar-${k}${state.glasses ? '' : '-no-shades'}.png`, data: blob });
+      status('Avatar saved.');
+    } catch (e) { status(e && e.code ? explain(e) : e.message); }
+  }
+
+  $('#dl-zip').addEventListener('click', async () => {
+    if (!downloads || !window.JSZip) return;
+    const btn = $('#dl-zip'); btn.disabled = true;
+    try {
+      const zip = new JSZip();
+      const list = M.exportList();
+      for (let i = 0; i < list.length; i++) {
+        status(`Drawing ${i + 1} of ${list.length}: ${list[i].path}`);
+        zip.file(list[i].path, await toPng(list[i].svg, list[i].w, list[i].h));
+      }
+      zip.file('rig.json', M.rigJson());
+      status('Packing the ZIP…');
+      const blob = await zip.generateAsync({ type: 'blob' });
+      const name = `mini-me${lookSuffix()}-kit.zip`;
+      await downloads.save({ filename: name, data: blob });
+      status(`Saved ${name} with ${list.length} PNGs and rig.json.`);
+    } catch (e) { status(e && e.code ? explain(e) : e.message); }
+    btn.disabled = !downloads;
+  });
+
+  function setDownloads(d) {
+    downloads = d;
+    $('#dl-zip').disabled = !d;
+    document.querySelectorAll('[data-avatar]').forEach(b => { b.disabled = !d; });
+    if (!d) status('Downloads are not available in this view.');
+  }
+  setDownloads(null); status('');
+  if (window.claude && window.claude.use) window.claude.use('downloads').then(setDownloads).catch(() => setDownloads(null));
+  else status('Downloads work when this page is opened on claude.ai.');
+
+  render();
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZARKYN Logo Reveal</title>
+<style>
+  :root { --bg:#07080d; --a:#7c5cff; --b:#00e0c6; --c:#ff5ca8; }
+  * { margin:0; box-sizing:border-box; }
+  html,body { height:100%; background:var(--bg); overflow:hidden; }
+  body { display:flex; align-items:center; justify-content:center;
+    background:radial-gradient(ellipse at 50% 45%, #141732 0%, var(--bg) 65%); }
+  .stage { width:min(86vmin,640px); display:flex; flex-direction:column; align-items:center; }
+  svg { width:100%; height:auto; overflow:visible; }
+  .s { fill:none; stroke:url(#g); stroke-width:3; stroke-linecap:round; }
+  .glow { filter:url(#blur); }
+  #word { font:600 56px/1 "Segoe UI",Helvetica,Arial,sans-serif; letter-spacing:.42em;
+    fill:#eef0ff; text-anchor:middle; opacity:0; }
+  #mark { transform-origin:300px 220px; }
+</style>
+</head>
+<body>
+<div class="stage">
+<svg viewBox="0 0 600 420" aria-label="ZARKYN">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="var(--a)"/><stop offset=".55" stop-color="var(--b)"/><stop offset="1" stop-color="var(--c)"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <g id="mark">
+    <g class="glow" id="glowG" opacity="0">
+      <circle class="s" cx="300" cy="220" r="70"/>
+    </g>
+    <circle class="s sh" id="c1" cx="170" cy="110" r="46"/>
+    <circle class="s sh" id="c2" cx="430" cy="330" r="46"/>
+    <circle class="s sh" id="c3" cx="300" cy="220" r="150"/>
+    <line class="s sh" id="l1" x1="60" y1="60" x2="540" y2="60"/>
+    <line class="s sh" id="l2" x1="60" y1="380" x2="540" y2="380"/>
+    <!-- final mark: ring + Z-diagonal -->
+    <path class="s mk" id="m1" d="M250 175 H350 L250 265 H350"/>
+    <circle class="s mk" id="m2" cx="300" cy="220" r="78"/>
+  </g>
+  <text id="word" x="300" y="405">ZARKYN</text>
+</svg>
+</div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const T = 5000;
+  const ease = {
+    out: t => 1 - Math.pow(1 - t, 4),
+    io: t => t < .5 ? 8*t*t*t*t : 1 - Math.pow(-2*t + 2, 4)/2,
+    back: t => { const c = 1.9; return 1 + (c+1)*Math.pow(t-1,3) + c*Math.pow(t-1,2); }
+  };
+  const clamp = (a,b,x) => Math.min(1, Math.max(0, (x-a)/(b-a)));
+  const els = {};
+  ["c1","c2","c3","l1","l2","m1","m2","word","mark","glowG"].forEach(i => els[i] = $(i));
+  const len = {};
+  for (const k of ["c1","c2","c3","l1","l2","m1","m2"]) {
+    len[k] = els[k].getTotalLength();
+    els[k].style.strokeDasharray = len[k];
+  }
+  const draw = (k, p) => els[k].style.strokeDashoffset = len[k] * (1 - p);
+  const lerp = (a,b,t) => a + (b-a)*t;
+
+  function frame(ms) {
+    const t = (ms % T) / T;                    // 0..1 loop
+    const fadeOut = 1 - clamp(.93, 1, t);      // gentle exit before loop
+    // 0-.30 draw in
+    draw("c3", ease.out(clamp(0, .28, t)));
+    draw("l1", ease.out(clamp(.04, .28, t)));
+    draw("l2", ease.out(clamp(.08, .32, t)));
+    draw("c1", ease.out(clamp(.10, .32, t)));
+    draw("c2", ease.out(clamp(.14, .36, t)));
+    // .36-.62 converge: circles slide to centre, big ring & lines shrink away
+    const cv = ease.io(clamp(.36, .62, t));
+    els.c1.setAttribute("cx", lerp(170, 300, cv)); els.c1.setAttribute("cy", lerp(110, 220, cv));
+    els.c2.setAttribute("cx", lerp(430, 300, cv)); els.c2.setAttribute("cy", lerp(330, 220, cv));
+    els.c1.setAttribute("r", lerp(46, 78, cv)); els.c2.setAttribute("r", lerp(46, 78, cv));
+    els.c3.setAttribute("r", lerp(150, 78, cv));
+    els.l1.setAttribute("y1", lerp(60, 175, cv)); els.l1.setAttribute("y2", lerp(60, 175, cv));
+    els.l2.setAttribute("y1", lerp(380, 265, cv)); els.l2.setAttribute("y2", lerp(380, 265, cv));
+    const shOp = 1 - clamp(.58, .68, t);       // helpers dissolve into the mark
+    document.querySelectorAll(".sh").forEach(e => e.style.opacity = shOp);
+    // .56-.80 morph into mark
+    draw("m2", ease.out(clamp(.56, .72, t)));
+    draw("m1", ease.out(clamp(.60, .80, t)));
+    const pop = ease.back(clamp(.66, .86, t));
+    const sc = t < .66 ? 1 : lerp(1.12, 1, pop);
+    els.mark.style.transform = `translateY(${lerp(0, -40, ease.io(clamp(.72, .9, t)))}px) scale(${sc})`;
+    els.glowG.style.opacity = .7 * clamp(.66, .8, t) * Math.abs(Math.sin(t * 6));
+    // wordmark slides/fades in
+    const w = ease.out(clamp(.76, .92, t));
+    els.word.style.opacity = w;
+    els.word.setAttribute("y", lerp(430, 405, w));
+    els.word.style.letterSpacing = lerp(.8, .42, w) + "em";
+    document.querySelector("svg").style.opacity = fadeOut;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

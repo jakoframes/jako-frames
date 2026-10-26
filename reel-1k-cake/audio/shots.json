@@ -1,0 +1,152 @@
+[
+ {
+  "id": "S01",
+  "start_s": 0.0,
+  "end_s": 5.4,
+  "start_frame": 1,
+  "end_frame": 130,
+  "camera": "CAM_S01",
+  "lens": 38,
+  "speaker": null
+ },
+ {
+  "id": "S02",
+  "start_s": 5.4,
+  "end_s": 9.31,
+  "start_frame": 131,
+  "end_frame": 223,
+  "camera": "CAM_S02",
+  "lens": 45,
+  "speaker": "jako"
+ },
+ {
+  "id": "S03",
+  "start_s": 9.31,
+  "end_s": 11.68,
+  "start_frame": 224,
+  "end_frame": 280,
+  "camera": "CAM_S03",
+  "lens": 40,
+  "speaker": "claude"
+ },
+ {
+  "id": "S04",
+  "start_s": 11.68,
+  "end_s": 12.14,
+  "start_frame": 281,
+  "end_frame": 291,
+  "camera": "CAM_S04",
+  "lens": 55,
+  "speaker": "jako"
+ },
+ {
+  "id": "S05",
+  "start_s": 12.14,
+  "end_s": 15.13,
+  "start_frame": 292,
+  "end_frame": 363,
+  "camera": "CAM_S05",
+  "lens": 35,
+  "speaker": "claude"
+ },
+ {
+  "id": "S06",
+  "start_s": 15.13,
+  "end_s": 16.7,
+  "start_frame": 364,
+  "end_frame": 401,
+  "camera": "CAM_S06",
+  "lens": 50,
+  "speaker": "jako"
+ },
+ {
+  "id": "S07",
+  "start_s": 16.7,
+  "end_s": 19.29,
+  "start_frame": 402,
+  "end_frame": 463,
+  "camera": "CAM_S07",
+  "lens": 40,
+  "speaker": "claude"
+ },
+ {
+  "id": "S08",
+  "start_s": 19.29,
+  "end_s": 20.64,
+  "start_frame": 464,
+  "end_frame": 495,
+  "camera": "CAM_S08",
+  "lens": 50,
+  "speaker": "jako"
+ },
+ {
+  "id": "S09",
+  "start_s": 20.64,
+  "end_s": 24.3,
+  "start_frame": 496,
+  "end_frame": 583,
+  "camera": "CAM_S09",
+  "lens": 40,
+  "speaker": "claude"
+ },
+ {
+  "id": "S10",
+  "start_s": 24.3,
+  "end_s": 25.65,
+  "start_frame": 584,
+  "end_frame": 616,
+  "camera": "CAM_S10",
+  "lens": 50,
+  "speaker": "jako"
+ },
+ {
+  "id": "S11",
+  "start_s": 25.65,
+  "end_s": 27.77,
+  "start_frame": 617,
+  "end_frame": 666,
+  "camera": "CAM_S11",
+  "lens": 45,
+  "speaker": "claude"
+ },
+ {
+  "id": "S12",
+  "start_s": 27.77,
+  "end_s": 29.89,
+  "start_frame": 667,
+  "end_frame": 717,
+  "camera": "CAM_S12",
+  "lens": 55,
+  "speaker": "jako"
+ },
+ {
+  "id": "S13",
+  "start_s": 29.89,
+  "end_s": 33.07,
+  "start_frame": 718,
+  "end_frame": 794,
+  "camera": "CAM_S13",
+  "lens": 36,
+  "speaker": "claude"
+ },
+ {
+  "id": "S14",
+  "start_s": 33.07,
+  "end_s": 37.08,
+  "start_frame": 795,
+  "end_frame": 890,
+  "camera": "CAM_S14",
+  "lens": 40,
+  "speaker": "jako"
+ },
+ {
+  "id": "S15",
+  "start_s": 37.08,
+  "end_s": 39.667,
+  "start_frame": 891,
+  "end_frame": 952,
+  "camera": "CAM_S15",
+  "lens": 40,
+  "speaker": null
+ }
+]

@@ -1,0 +1,32 @@
+0
+00:00:00,000 --> 00:00:02,000
+Wait, what are those?
+
+1
+00:00:02,000 --> 00:00:05,000
+No, not with you. Just me.
+
+2
+00:00:05,000 --> 00:00:08,000
+Nah, I'm kidding, bro. Congrats!
+
+3
+00:00:08,000 --> 00:00:11,000
+No, no. I have to ask. What's your plan?
+
+4
+00:00:11,000 --> 00:00:15,000
+Wrong answer. You're gonna teach people how to use Claude properly.
+
+5
+00:00:15,000 --> 00:00:18,000
+Mmm, you didn't mean that.
+
+6
+00:00:18,000 --> 00:00:21,000
+Okay, okay. Let's just eat the cake.
+
+7
+00:00:21,000 --> 00:00:24,000
+Get out!
+
