@@ -30,3 +30,6 @@ __pycache__/
 .env
 .env.*
 .claude/settings.local.json
+
+# Portfolio site has its own repo (jakoframes.github.io)
+site/
